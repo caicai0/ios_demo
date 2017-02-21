@@ -35,17 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B27D9491E5BD3F900C32EAE /* contacts_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27D9491E5BD3F900C32EAE /* contacts_demo_通讯录导入.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contacts_demo_通讯录导入.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B27D94C1E5BD3F900C32EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B27D94E1E5BD3F900C32EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B27D9511E5BD3F900C32EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B27D9531E5BD3F900C32EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B27D9561E5BD3F900C32EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B27D9581E5BD3F900C32EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B27D95D1E5BD3F900C32EAE /* contacts_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contacts_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27D95D1E5BD3F900C32EAE /* contacts_demo_通讯录导入Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "contacts_demo_通讯录导入Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B27D9611E5BD3F900C32EAE /* contacts_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contacts_demoTests.swift; sourceTree = "<group>"; };
 		4B27D9631E5BD3F900C32EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B27D9681E5BD3F900C32EAE /* contacts_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contacts_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27D9681E5BD3F900C32EAE /* contacts_demo_通讯录导入UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "contacts_demo_通讯录导入UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B27D96C1E5BD3F900C32EAE /* contacts_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contacts_demoUITests.swift; sourceTree = "<group>"; };
 		4B27D96E1E5BD3F900C32EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B27D97E1E5BED2000C32EAE /* txl.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = txl.csv; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 		4B27D94A1E5BD3F900C32EAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B27D9491E5BD3F900C32EAE /* contacts_demo.app */,
-				4B27D95D1E5BD3F900C32EAE /* contacts_demoTests.xctest */,
-				4B27D9681E5BD3F900C32EAE /* contacts_demoUITests.xctest */,
+				4B27D9491E5BD3F900C32EAE /* contacts_demo_通讯录导入.app */,
+				4B27D95D1E5BD3F900C32EAE /* contacts_demo_通讯录导入Tests.xctest */,
+				4B27D9681E5BD3F900C32EAE /* contacts_demo_通讯录导入UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B27D9481E5BD3F900C32EAE /* contacts_demo */ = {
+		4B27D9481E5BD3F900C32EAE /* contacts_demo_通讯录导入 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B27D9711E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo" */;
+			buildConfigurationList = 4B27D9711E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入" */;
 			buildPhases = (
 				4B27D9451E5BD3F900C32EAE /* Sources */,
 				4B27D9461E5BD3F900C32EAE /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = contacts_demo;
+			name = "contacts_demo_通讯录导入";
 			productName = contacts_demo;
-			productReference = 4B27D9491E5BD3F900C32EAE /* contacts_demo.app */;
+			productReference = 4B27D9491E5BD3F900C32EAE /* contacts_demo_通讯录导入.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4B27D95C1E5BD3F900C32EAE /* contacts_demoTests */ = {
+		4B27D95C1E5BD3F900C32EAE /* contacts_demo_通讯录导入Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B27D9741E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demoTests" */;
+			buildConfigurationList = 4B27D9741E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入Tests" */;
 			buildPhases = (
 				4B27D9591E5BD3F900C32EAE /* Sources */,
 				4B27D95A1E5BD3F900C32EAE /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				4B27D95F1E5BD3F900C32EAE /* PBXTargetDependency */,
 			);
-			name = contacts_demoTests;
+			name = "contacts_demo_通讯录导入Tests";
 			productName = contacts_demoTests;
-			productReference = 4B27D95D1E5BD3F900C32EAE /* contacts_demoTests.xctest */;
+			productReference = 4B27D95D1E5BD3F900C32EAE /* contacts_demo_通讯录导入Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4B27D9671E5BD3F900C32EAE /* contacts_demoUITests */ = {
+		4B27D9671E5BD3F900C32EAE /* contacts_demo_通讯录导入UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B27D9771E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demoUITests" */;
+			buildConfigurationList = 4B27D9771E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入UITests" */;
 			buildPhases = (
 				4B27D9641E5BD3F900C32EAE /* Sources */,
 				4B27D9651E5BD3F900C32EAE /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				4B27D96A1E5BD3F900C32EAE /* PBXTargetDependency */,
 			);
-			name = contacts_demoUITests;
+			name = "contacts_demo_通讯录导入UITests";
 			productName = contacts_demoUITests;
-			productReference = 4B27D9681E5BD3F900C32EAE /* contacts_demoUITests.xctest */;
+			productReference = 4B27D9681E5BD3F900C32EAE /* contacts_demo_通讯录导入UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B27D9441E5BD3F900C32EAE /* Build configuration list for PBXProject "contacts_demo" */;
+			buildConfigurationList = 4B27D9441E5BD3F900C32EAE /* Build configuration list for PBXProject "contacts_demo_通讯录导入" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -226,9 +226,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B27D9481E5BD3F900C32EAE /* contacts_demo */,
-				4B27D95C1E5BD3F900C32EAE /* contacts_demoTests */,
-				4B27D9671E5BD3F900C32EAE /* contacts_demoUITests */,
+				4B27D9481E5BD3F900C32EAE /* contacts_demo_通讯录导入 */,
+				4B27D95C1E5BD3F900C32EAE /* contacts_demo_通讯录导入Tests */,
+				4B27D9671E5BD3F900C32EAE /* contacts_demo_通讯录导入UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		4B27D95F1E5BD3F900C32EAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4B27D9481E5BD3F900C32EAE /* contacts_demo */;
+			target = 4B27D9481E5BD3F900C32EAE /* contacts_demo_通讯录导入 */;
 			targetProxy = 4B27D95E1E5BD3F900C32EAE /* PBXContainerItemProxy */;
 		};
 		4B27D96A1E5BD3F900C32EAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4B27D9481E5BD3F900C32EAE /* contacts_demo */;
+			target = 4B27D9481E5BD3F900C32EAE /* contacts_demo_通讯录导入 */;
 			targetProxy = 4B27D9691E5BD3F900C32EAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -362,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -452,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appstore.contacts-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contacts_demo.app/contacts_demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contacts_demo_通讯录导入.app/contacts_demo_通讯录导入";
 			};
 			name = Debug;
 		};
@@ -467,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appstore.contacts-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contacts_demo.app/contacts_demo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contacts_demo_通讯录导入.app/contacts_demo_通讯录导入";
 			};
 			name = Release;
 		};
@@ -502,7 +502,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B27D9441E5BD3F900C32EAE /* Build configuration list for PBXProject "contacts_demo" */ = {
+		4B27D9441E5BD3F900C32EAE /* Build configuration list for PBXProject "contacts_demo_通讯录导入" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B27D96F1E5BD3F900C32EAE /* Debug */,
@@ -511,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B27D9711E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo" */ = {
+		4B27D9711E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B27D9721E5BD3F900C32EAE /* Debug */,
@@ -519,7 +519,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		4B27D9741E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demoTests" */ = {
+		4B27D9741E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B27D9751E5BD3F900C32EAE /* Debug */,
@@ -527,7 +527,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		4B27D9771E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demoUITests" */ = {
+		4B27D9771E5BD3F900C32EAE /* Build configuration list for PBXNativeTarget "contacts_demo_通讯录导入UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B27D9781E5BD3F900C32EAE /* Debug */,

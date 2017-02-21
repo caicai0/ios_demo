@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B27D9481E5BD3F900C32EAE"
-               BuildableName = "contacts_demo.app"
-               BlueprintName = "contacts_demo"
-               ReferencedContainer = "container:contacts_demo.xcodeproj">
+               BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.app"
+               BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;"
+               ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B27D95C1E5BD3F900C32EAE"
-               BuildableName = "contacts_demoTests.xctest"
-               BlueprintName = "contacts_demoTests"
-               ReferencedContainer = "container:contacts_demo.xcodeproj">
+               BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;Tests.xctest"
+               BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;Tests"
+               ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B27D9671E5BD3F900C32EAE"
-               BuildableName = "contacts_demoUITests.xctest"
-               BlueprintName = "contacts_demoUITests"
-               ReferencedContainer = "container:contacts_demo.xcodeproj">
+               BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;UITests.xctest"
+               BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;UITests"
+               ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B27D9481E5BD3F900C32EAE"
-            BuildableName = "contacts_demo.app"
-            BlueprintName = "contacts_demo"
-            ReferencedContainer = "container:contacts_demo.xcodeproj">
+            BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.app"
+            BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;"
+            ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B27D9481E5BD3F900C32EAE"
-            BuildableName = "contacts_demo.app"
-            BlueprintName = "contacts_demo"
-            ReferencedContainer = "container:contacts_demo.xcodeproj">
+            BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.app"
+            BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;"
+            ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B27D9481E5BD3F900C32EAE"
-            BuildableName = "contacts_demo.app"
-            BlueprintName = "contacts_demo"
-            ReferencedContainer = "container:contacts_demo.xcodeproj">
+            BuildableName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.app"
+            BlueprintName = "contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;"
+            ReferencedContainer = "container:contacts_demo_&#x901a;&#x8baf;&#x5f55;&#x5bfc;&#x5165;.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
