@@ -4,4 +4,7 @@
    <FileRef
       location = "group:jspatch_demo/jspatch_demo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CAIJSPatch/CAIJSPatch.xcodeproj">
+   </FileRef>
 </Workspace>

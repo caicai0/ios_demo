@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Foundation
 
 class book: NSObject {
-    init(path:NS) {
+    init(path: String) {
         
     }
 }

@@ -7,26 +7,29 @@
 //
 
 #import "AppDelegate.h"
-#import <JSPatch/JSPatch.h>
+
 #import "JPViewController.h"
+#import <CAIJSPatch/CAIPatch.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [[CAIPatch sharePatch]start];
     
-    [JPEngine startEngine];
-    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
-    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
-    [JPEngine evaluateScript:script];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    JPViewController *rootViewController = [[JPViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
-    self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
-    
-    [[UINavigationBar appearance] setBackgroundImage:nil forBarMetrics:UIBarMetricsCompact];
     return YES;
+}
+
+- (void)loadPatch{
+    NSUserDefaults * df = [[NSUserDefaults alloc]initWithSuiteName:@"cai_ios_patch"];
+    NSString * durl = [df stringForKey:@"url"];
+    NSLog(@"dfurl:%@",durl);
+    NSString * repo = @"https://github.com/caicai0/ios_patch/blob/master";
+    NSString * bundleIdentifer = [NSBundle mainBundle].infoDictionary[@"CFBundleIdentifier"];
+    NSString * buildN = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    NSString * url = [NSString stringWithFormat:@"%@/%@/%@.js?raw=true",repo,bundleIdentifer,buildN];
+    NSLog(@"%@",url);
+    [df setObject:url forKey:@"url"];
 }
 
 @end
