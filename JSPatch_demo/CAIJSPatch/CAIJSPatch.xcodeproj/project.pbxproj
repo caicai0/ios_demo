@@ -872,7 +872,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CAIJSPatch/JSPatch/Extensions/JPLibffi/libffi",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstore.CAIJSPatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

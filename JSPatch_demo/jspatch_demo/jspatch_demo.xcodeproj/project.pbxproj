@@ -19,9 +19,6 @@
 		4B5856E21E67FD3D00621E1C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5856E11E67FD3D00621E1C /* JavaScriptCore.framework */; };
 		4B5856ED1E67FEEA00621E1C /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 4B5856EA1E67FEEA00621E1C /* demo.js */; };
 		4B5856EE1E67FEEA00621E1C /* JPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5856EC1E67FEEA00621E1C /* JPViewController.m */; };
-		4B71E4CC1E6D641B0030F9ED /* CAIJSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B71E4CB1E6D641B0030F9ED /* CAIJSPatch.framework */; };
-		4B71E4CD1E6D64220030F9ED /* CAIJSPatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B71E4CB1E6D641B0030F9ED /* CAIJSPatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4B71E4CE1E6D645A0030F9ED /* CAIJSPatch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4B71E4CB1E6D641B0030F9ED /* CAIJSPatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4B71E4CD1E6D64220030F9ED /* CAIJSPatch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -56,9 +52,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B02A1DF1E6D17730059EB0B /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSPatch.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/jspatch_demo-cggwottoqjjyasbjhzkaevhbgppm/Build/Products/Debug-iphoneos/JSPatch.framework"; sourceTree = "<group>"; };
-		4B02A2E61E6D606B0059EB0B /* CAIJSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CAIJSPatch.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/jspatch_demo-cggwottoqjjyasbjhzkaevhbgppm/Build/Products/Debug-iphonesimulator/CAIJSPatch.framework"; sourceTree = "<group>"; };
-		4B02A2EF1E6D632A0059EB0B /* CAIJSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CAIJSPatch.framework; path = "../CAIJSPatch/build/Release-iphoneos/CAIJSPatch.framework"; sourceTree = "<group>"; };
 		4B5856A61E67FD0300621E1C /* jspatch_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jspatch_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5856AA1E67FD0300621E1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4B5856AC1E67FD0300621E1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,7 +73,6 @@
 		4B5856EA1E67FEEA00621E1C /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		4B5856EB1E67FEEA00621E1C /* JPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewController.h; sourceTree = "<group>"; };
 		4B5856EC1E67FEEA00621E1C /* JPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewController.m; sourceTree = "<group>"; };
-		4B71E4CB1E6D641B0030F9ED /* CAIJSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CAIJSPatch.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/jspatch_demo-cggwottoqjjyasbjhzkaevhbgppm/Build/Products/Debug-iphoneos/CAIJSPatch.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B71E4CC1E6D641B0030F9ED /* CAIJSPatch.framework in Frameworks */,
 				4B5856E21E67FD3D00621E1C /* JavaScriptCore.framework in Frameworks */,
 				4B5856E01E67FD3500621E1C /* libz.tbd in Frameworks */,
 			);
@@ -180,10 +171,6 @@
 		4B5856DE1E67FD3500621E1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B71E4CB1E6D641B0030F9ED /* CAIJSPatch.framework */,
-				4B02A2EF1E6D632A0059EB0B /* CAIJSPatch.framework */,
-				4B02A2E61E6D606B0059EB0B /* CAIJSPatch.framework */,
-				4B02A1DF1E6D17730059EB0B /* JSPatch.framework */,
 				4B5856E11E67FD3D00621E1C /* JavaScriptCore.framework */,
 				4B5856DF1E67FD3500621E1C /* libz.tbd */,
 			);
@@ -300,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B71E4CE1E6D645A0030F9ED /* CAIJSPatch.framework in Resources */,
 				4B5856B91E67FD0300621E1C /* LaunchScreen.storyboard in Resources */,
 				4B5856B61E67FD0300621E1C /* Assets.xcassets in Resources */,
 				4B5856B41E67FD0300621E1C /* Main.storyboard in Resources */,
@@ -482,13 +468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3F685LX6UR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = jspatch_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appstore.jspatch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -499,13 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3F685LX6UR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = jspatch_demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appstore.jspatch-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
