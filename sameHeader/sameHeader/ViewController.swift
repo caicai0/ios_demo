@@ -12,9 +12,18 @@ import SnapKit
 class ViewController: UIViewController {
 
     let scrollView = UIScrollView()
+    var headerSize:CGSize = CGSize(width: 0, height: 0)
+    var controllers:[UIViewController] = []
+    var headerView:header? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        scrollView.delegate = self;
+        addViews()
+        addheaderView()
+    }
+    
+    func addViews() -> () {
         scrollView.isPagingEnabled = true
         self.view.addSubview(scrollView)
         scrollView.snp.makeConstraints { (maker) in
@@ -41,11 +50,52 @@ class ViewController: UIViewController {
             maker.width.equalToSuperview()
             maker.height.equalToSuperview()
         }
+        controllers.append(controller1)
+        controllers.append(controller2)
+    }
+    
+    func addheaderView() -> () {
+        self.headerView = UINib(nibName: "header", bundle: nil).instantiate(withOwner: nil, options: nil).first as? header
+        self.view.addSubview(headerView!)
+        headerView?.snp.makeConstraints { (maker) in
+            maker.width.equalToSuperview()
+            maker.left.equalToSuperview()
+            maker.top.equalToSuperview()
+        }
+        updateHeaderSize()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateHeaderSize() -> () {
+        headerSize = (headerView?.systemLayoutSizeFitting(UILayoutFittingCompressedSize))!
+        for controller in controllers {
+            if controller.isKind(of: contentController.self) {
+                let content:contentController = controller as! contentController
+                content.headerSize = self.headerSize;
+            }
+        }
+    }
+}
+
+extension ViewController : UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
     }
 }
 

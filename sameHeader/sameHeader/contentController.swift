@@ -9,8 +9,21 @@
 import UIKit
 
 class contentController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
+    var localSize:CGSize = CGSize.zero
+    
+    
+    open var headerSize:CGSize {
+        set{
+            localSize = newValue
+            tableView.contentInset = UIEdgeInsetsMake(localSize.height, 0, 0, 0)
+        }
+        get{
+            return localSize
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

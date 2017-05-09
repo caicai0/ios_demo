@@ -18,6 +18,7 @@
 		4B5324D61EB971AA002BEA40 /* contentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5324D51EB971AA002BEA40 /* contentController.swift */; };
 		4B5324D81EB975D1002BEA40 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5324CD1EB96EE8002BEA40 /* SnapKit.framework */; };
 		4B5324E11EB985B0002BEA40 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5324E01EB985B0002BEA40 /* header.swift */; };
+		4B5324E31EB99F6D002BEA40 /* header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5324E21EB99F6D002BEA40 /* header.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4B5324CD1EB96EE8002BEA40 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		4B5324D51EB971AA002BEA40 /* contentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contentController.swift; sourceTree = "<group>"; };
 		4B5324E01EB985B0002BEA40 /* header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
+		4B5324E21EB99F6D002BEA40 /* header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = header.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				4B5324A91EB96E7B002BEA40 /* Info.plist */,
 				4B5324D51EB971AA002BEA40 /* contentController.swift */,
 				4B5324E01EB985B0002BEA40 /* header.swift */,
+				4B5324E21EB99F6D002BEA40 /* header.xib */,
 			);
 			path = sameHeader;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5324E31EB99F6D002BEA40 /* header.xib in Resources */,
 				4B5324A81EB96E7B002BEA40 /* LaunchScreen.storyboard in Resources */,
 				4B5324A51EB96E7B002BEA40 /* Assets.xcassets in Resources */,
 				4B5324A31EB96E7B002BEA40 /* Main.storyboard in Resources */,
