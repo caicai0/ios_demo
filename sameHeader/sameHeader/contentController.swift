@@ -9,14 +9,24 @@
 import UIKit
 
 class contentController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet open weak var tableView: UITableView!
     var localSize:CGSize = CGSize.zero
+    weak var localHeader:UIView? = nil
     
+    open var header:UIView?{
+        set{
+            localHeader = header
+            //初始化操作
+        }
+        get{
+            return localHeader
+        }
+    }
     
     open var headerSize:CGSize {
         set{
             localSize = newValue
-            tableView.contentInset = UIEdgeInsetsMake(localSize.height, 0, 0, 0)
+            tableView.contentInset = UIEdgeInsetsMake(localSize.height+64, 0, 0, 0)
         }
         get{
             return localSize
@@ -45,4 +55,23 @@ extension contentController : UITableViewDelegate,UITableViewDataSource {
         cell.textLabel?.text = "slldk\(indexPath.row)";
         return cell
     }
+    
+    //UIScrollViewDelegate
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        print("\(#function) in \(#file)\n")
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print("\(#function) in \(#file)\n")
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print("\(#function) in \(#file)\n")
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("\(#function) in \(#file)\n")
+    }
+    
+    
 }

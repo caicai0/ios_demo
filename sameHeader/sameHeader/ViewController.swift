@@ -79,23 +79,40 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    //添加header到controller
+    func moveHeaderIn() -> () {
+        
+    }
+    
+    //移动header到contentcontroller
+    func modeHeaderOut() -> () {
+        
+    }
+    //当滑动到一半的时候需要调整内容页面的偏移量 和 header的位置相匹配
+    func prepareOffsetForHeader(from:contentController ,to:contentController) -> () {
+        if from.tableView.contentOffset.y <= (self.headerView?.bounds.size.height)! {
+            
+        }
+    }
+    
 }
 
 extension ViewController : UIScrollViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        
+        print("\(#function) in \(#file)\n")
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        
+        print("\(#function) in \(#file)\n")
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+        print("\(#function) in \(#file)\n")
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
+        print("\(#function) in \(#file)\n")
     }
 }
 
