@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:../fmdb/src"
+      name = "src">
+      <Group
+         location = "group:extra"
+         name = "extra">
+         <Group
+            location = "group:fts3"
+            name = "fts3">
+            <FileRef
+               location = "group:FMDatabase+FTS3.h">
+            </FileRef>
+            <FileRef
+               location = "group:FMDatabase+FTS3.m">
+            </FileRef>
+            <FileRef
+               location = "group:FMTokenizers.h">
+            </FileRef>
+            <FileRef
+               location = "group:FMTokenizers.m">
+            </FileRef>
+            <FileRef
+               location = "group:fts3_tokenizer.h">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:InMemoryOnDiskIO"
+            name = "InMemoryOnDiskIO">
+            <FileRef
+               location = "group:FMDatabase+InMemoryOnDiskIO.h">
+            </FileRef>
+            <FileRef
+               location = "group:FMDatabase+InMemoryOnDiskIO.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:fmdb"
+         name = "fmdb">
+         <FileRef
+            location = "group:FMDatabase.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabase.m">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabaseAdditions.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabaseAdditions.m">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabasePool.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabasePool.m">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabaseQueue.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMDatabaseQueue.m">
+         </FileRef>
+         <FileRef
+            location = "group:FMDB.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMResultSet.h">
+         </FileRef>
+         <FileRef
+            location = "group:FMResultSet.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:sample"
+         name = "sample">
+         <FileRef
+            location = "group:fmdb_Prefix.pch">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "self:fmdb.xcodeproj">
+   </FileRef>
+</Workspace>

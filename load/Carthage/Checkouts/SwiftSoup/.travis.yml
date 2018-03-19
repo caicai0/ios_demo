@@ -1,0 +1,13 @@
+os:
+  - linux
+  - osx
+ # safelist
+branches:
+  only:
+  - master
+language: generic
+sudo: required
+dist: trusty
+osx_image: xcode8.3
+script:
+  - eval "$(curl -sL https://raw.githubusercontent.com/scinfu/SwiftSoup/master/ci)"

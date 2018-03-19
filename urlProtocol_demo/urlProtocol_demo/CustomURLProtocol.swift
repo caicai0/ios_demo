@@ -36,7 +36,7 @@ class CustomURLProtocol: URLProtocol ,NSURLConnectionDataDelegate{
             }
         }
         req = NSMutableURLRequest(url: (components?.url)!) as URLRequest
-        print(req)
+        print(req ?? "nil")
         return req!
     }
     
