@@ -18,22 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    if ([UIDevice currentDevice].systemVersion.doubleValue <= 8.0) {
+    if ([UIDevice currentDevice].systemVersion.doubleValue < 8.0) {
         [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound|UIRemoteNotificationTypeAlert];
+    }else if([UIDevice currentDevice].systemVersion.doubleValue < 10.0){
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge| UIUserNotificationTypeSound|UIUserNotificationTypeAlert  categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
     }else{
-        if (@available(iOS 8.0,*)) {
-            UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge| UIUserNotificationTypeSound|UIUserNotificationTypeAlert  categories:nil];
-            [application registerUserNotificationSettings:settings];
-        }else
         if (@available(iOS 10.0, *)) {
             UNAuthorizationOptions options = UNAuthorizationOptionBadge|UNAuthorizationOptionSound|UNAuthorizationOptionAlert|UNAuthorizationOptionCarPlay;
             [[UNUserNotificationCenter currentNotificationCenter]requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError * _Nullable error) {
                 
             }];
-        } else {
-            // Fallback on earlier versions
         }
-        //申请使用通知
         [application registerForRemoteNotifications];
     }
     

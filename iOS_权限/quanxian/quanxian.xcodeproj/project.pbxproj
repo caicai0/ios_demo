@@ -15,6 +15,7 @@
 		4B011AD2205F5CD100AB3BE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B011AD1205F5CD100AB3BE7 /* main.m */; };
 		4B011ADC205F5CD200AB3BE7 /* quanxianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B011ADB205F5CD200AB3BE7 /* quanxianTests.m */; };
 		4B011AE7205F5CD200AB3BE7 /* quanxianUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B011AE6205F5CD200AB3BE7 /* quanxianUITests.m */; };
+		4B522071205F94E600672957 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B522070205F94E600672957 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		4B011AE6205F5CD200AB3BE7 /* quanxianUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = quanxianUITests.m; sourceTree = "<group>"; };
 		4B011AE8205F5CD200AB3BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B011AF4205F62F600AB3BE7 /* quanxian.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quanxian.entitlements; sourceTree = "<group>"; };
+		4B522070205F94E600672957 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B522071205F94E600672957 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 				4B011ADA205F5CD200AB3BE7 /* quanxianTests */,
 				4B011AE5205F5CD200AB3BE7 /* quanxianUITests */,
 				4B011AC0205F5CD100AB3BE7 /* Products */,
+				4B52206F205F94E600672957 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +136,14 @@
 				4B011AE8205F5CD200AB3BE7 /* Info.plist */,
 			);
 			path = quanxianUITests;
+			sourceTree = "<group>";
+		};
+		4B52206F205F94E600672957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B522070205F94E600672957 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +216,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
 							};
 						};
 					};
@@ -437,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = quanxian/quanxian.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F685LX6UR;
 				INFOPLIST_FILE = quanxian/Info.plist;
@@ -451,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = quanxian/quanxian.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3F685LX6UR;
 				INFOPLIST_FILE = quanxian/Info.plist;

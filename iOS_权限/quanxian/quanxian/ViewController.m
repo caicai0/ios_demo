@@ -18,18 +18,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //获取权限
-    if ([UIApplication sharedApplication].isRegisteredForRemoteNotifications) {
-        [[UIApplication sharedApplication] currentUserNotificationSettings];
-    }else{
-        NSLog(@"no");
-    }
-    
-    if ([[UIApplication sharedApplication] currentUserNotificationSettings]) {
+    if (@available(iOS 10.0, *)) {
         [[UNUserNotificationCenter currentNotificationCenter]getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-            UNNotificationSetting * notificationSetting = settings.notificationCenterSetting;
-            NSLog(@"%d",notificationSetting);
+            UNNotificationSetting notificationSetting = settings.notificationCenterSetting;
+            if (notificationSetting == UNNotificationSettingEnabled) {
+                
+            }else if(notificationSetting == UNNotificationSettingDisabled){
+                
+            }else{//UNNotificationSettingNotSupported
+                
+            }
         }];
+    } else {
+        if (@available(iOS 8.0, *)) {
+            if([[UIApplication sharedApplication] currentUserNotificationSettings].types == UIUserNotificationTypeNone){
+                
+            }else{
+                
+            }
+        }else{
+            if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes]  == UIRemoteNotificationTypeNone){
+                
+            }else{
+                
+            }
+        }
     }
     
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]]){
