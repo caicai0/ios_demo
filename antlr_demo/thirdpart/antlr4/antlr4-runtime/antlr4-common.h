@@ -92,8 +92,8 @@
   #endif
 #endif
 
-#include "support/guid.h"
-#include "support/Declarations.h"
+#include "guid.h"
+#include "Declarations.h"
 
 #if !defined(HAS_NOEXCEPT)
   #if defined(__clang__)

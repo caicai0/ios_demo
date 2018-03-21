@@ -6,7 +6,7 @@
 #pragma once
 
 #include "RuleContext.h"
-#include "atn/LexerAction.h"
+#include "LexerAction.h"
 
 namespace antlr4 {
 namespace atn {

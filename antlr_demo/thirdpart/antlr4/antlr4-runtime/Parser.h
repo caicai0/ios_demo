@@ -1,4 +1,4 @@
-﻿/* Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
+/* Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
  * Use of this file is governed by the BSD 3-clause license that
  * can be found in the LICENSE.txt file in the project root.
  */
@@ -6,11 +6,11 @@
 #pragma once
 
 #include "Recognizer.h"
-#include "tree/ParseTreeListener.h"
-#include "tree/ParseTree.h"
+#include "ParseTreeListener.h"
+#include "ParseTree.h"
 #include "TokenStream.h"
 #include "TokenSource.h"
-#include "misc/Interval.h"
+#include "Interval.h"
 
 namespace antlr4 {
 

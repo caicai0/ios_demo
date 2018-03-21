@@ -1,4 +1,4 @@
-﻿/* Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
+/* Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
  * Use of this file is governed by the BSD 3-clause license that
  * can be found in the LICENSE.txt file in the project root.
  */
@@ -6,11 +6,11 @@
 #pragma once
 
 #include "PredictionMode.h"
-#include "dfa/DFAState.h"
-#include "atn/ATNSimulator.h"
-#include "atn/PredictionContext.h"
+#include "DFAState.h"
+#include "ATNSimulator.h"
+#include "PredictionContext.h"
 #include "SemanticContext.h"
-#include "atn/ATNConfig.h"
+#include "ATNConfig.h"
 
 namespace antlr4 {
 namespace atn {

@@ -5,8 +5,8 @@
 
 #pragma once
 
-#include "atn/LexerAction.h"
-#include "atn/LexerActionType.h"
+#include "LexerAction.h"
+#include "LexerActionType.h"
 
 namespace antlr4 {
 namespace atn {

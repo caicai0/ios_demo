@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "atn/DecisionEventInfo.h"
+#include "DecisionEventInfo.h"
 
 namespace antlr4 {
 namespace atn {

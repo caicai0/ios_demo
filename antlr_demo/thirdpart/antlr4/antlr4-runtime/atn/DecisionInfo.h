@@ -5,10 +5,10 @@
 
 #pragma once
 
-#include "atn/ContextSensitivityInfo.h"
-#include "atn/AmbiguityInfo.h"
-#include "atn/PredicateEvalInfo.h"
-#include "atn/ErrorInfo.h"
+#include "ContextSensitivityInfo.h"
+#include "AmbiguityInfo.h"
+#include "PredicateEvalInfo.h"
+#include "ErrorInfo.h"
 
 namespace antlr4 {
 namespace atn {

@@ -32,7 +32,7 @@
 
 #include "antlr4-common.h"
 
-#include "tree/ParseTreeWalker.h"
+#include "ParseTreeWalker.h"
 
 namespace antlr4 {
 namespace tree {

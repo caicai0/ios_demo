@@ -5,8 +5,8 @@
 
 #pragma once
 
-#include "atn/ParserATNSimulator.h"
-#include "atn/DecisionInfo.h"
+#include "ParserATNSimulator.h"
+#include "DecisionInfo.h"
 
 namespace antlr4 {
 namespace atn {

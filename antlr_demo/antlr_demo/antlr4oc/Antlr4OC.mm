@@ -11,4 +11,14 @@
 
 @implementation Antlr4OC
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        antlr4::ANTLRInputStream *inputStream = new antlr4::ANTLRInputStream("select * from x;");
+        antlr4::Lexer
+    }
+    return self;
+}
+
 @end
