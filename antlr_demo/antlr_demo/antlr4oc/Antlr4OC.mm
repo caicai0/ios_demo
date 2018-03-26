@@ -8,6 +8,7 @@
 
 #import "Antlr4OC.h"
 #import "antlr4-runtime.h"
+#import "SQLiteLexer.h"
 
 @implementation Antlr4OC
 
@@ -16,7 +17,8 @@
     self = [super init];
     if (self) {
         antlr4::ANTLRInputStream *inputStream = new antlr4::ANTLRInputStream("select * from x;");
-        antlr4::Lexer
+        SQLiteLexer * sqliteLexer = new SQLiteLexer(inputStream);
+        
     }
     return self;
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334042612063737E002B0274 /* SQLiteLexer.interp in Resources */ = {isa = PBXBuildFile; fileRef = 334042552063737D002B0274 /* SQLiteLexer.interp */; };
+		334042622063737E002B0274 /* SQLiteBaseListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 334042562063737D002B0274 /* SQLiteBaseListener.cpp */; };
+		334042632063737E002B0274 /* SQLite.tokens in Resources */ = {isa = PBXBuildFile; fileRef = 334042572063737D002B0274 /* SQLite.tokens */; };
+		334042642063737E002B0274 /* SQLiteListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 334042592063737D002B0274 /* SQLiteListener.cpp */; };
+		334042652063737E002B0274 /* SQLiteParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3340425A2063737D002B0274 /* SQLiteParser.cpp */; };
+		334042662063737E002B0274 /* SQLiteLexer.tokens in Resources */ = {isa = PBXBuildFile; fileRef = 3340425B2063737E002B0274 /* SQLiteLexer.tokens */; };
+		334042672063737E002B0274 /* SQLite.interp in Resources */ = {isa = PBXBuildFile; fileRef = 3340425E2063737E002B0274 /* SQLite.interp */; };
+		334042682063737E002B0274 /* SQLiteLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 334042602063737E002B0274 /* SQLiteLexer.cpp */; };
 		4B15586020623A52002B4FDA /* ObjectiveCLexer.g4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B1557A520623A23002B4FDA /* ObjectiveCLexer.g4 */; };
 		4B15586120623A52002B4FDA /* tinyc.g4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B1557A620623A23002B4FDA /* tinyc.g4 */; };
 		4B15586220623A52002B4FDA /* Swift2.g4 in Resources */ = {isa = PBXBuildFile; fileRef = 4B1557A720623A23002B4FDA /* Swift2.g4 */; };
@@ -233,6 +241,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		334042552063737D002B0274 /* SQLiteLexer.interp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SQLiteLexer.interp; sourceTree = "<group>"; };
+		334042562063737D002B0274 /* SQLiteBaseListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteBaseListener.cpp; sourceTree = "<group>"; };
+		334042572063737D002B0274 /* SQLite.tokens */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SQLite.tokens; sourceTree = "<group>"; };
+		334042582063737D002B0274 /* SQLiteBaseListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteBaseListener.h; sourceTree = "<group>"; };
+		334042592063737D002B0274 /* SQLiteListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteListener.cpp; sourceTree = "<group>"; };
+		3340425A2063737D002B0274 /* SQLiteParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteParser.cpp; sourceTree = "<group>"; };
+		3340425B2063737E002B0274 /* SQLiteLexer.tokens */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SQLiteLexer.tokens; sourceTree = "<group>"; };
+		3340425C2063737E002B0274 /* SQLiteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteParser.h; sourceTree = "<group>"; };
+		3340425D2063737E002B0274 /* SQLiteLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteLexer.h; sourceTree = "<group>"; };
+		3340425E2063737E002B0274 /* SQLite.interp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SQLite.interp; sourceTree = "<group>"; };
+		3340425F2063737E002B0274 /* SQLiteListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteListener.h; sourceTree = "<group>"; };
+		334042602063737E002B0274 /* SQLiteLexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SQLiteLexer.cpp; sourceTree = "<group>"; };
 		4B1557A520623A23002B4FDA /* ObjectiveCLexer.g4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjectiveCLexer.g4; sourceTree = "<group>"; };
 		4B1557A620623A23002B4FDA /* tinyc.g4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tinyc.g4; sourceTree = "<group>"; };
 		4B1557A720623A23002B4FDA /* Swift2.g4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift2.g4; sourceTree = "<group>"; };
@@ -633,6 +653,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3340425420637320002B0274 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				3340425E2063737E002B0274 /* SQLite.interp */,
+				334042572063737D002B0274 /* SQLite.tokens */,
+				334042562063737D002B0274 /* SQLiteBaseListener.cpp */,
+				334042582063737D002B0274 /* SQLiteBaseListener.h */,
+				334042602063737E002B0274 /* SQLiteLexer.cpp */,
+				3340425D2063737E002B0274 /* SQLiteLexer.h */,
+				334042552063737D002B0274 /* SQLiteLexer.interp */,
+				3340425B2063737E002B0274 /* SQLiteLexer.tokens */,
+				334042592063737D002B0274 /* SQLiteListener.cpp */,
+				3340425F2063737E002B0274 /* SQLiteListener.h */,
+				3340425A2063737D002B0274 /* SQLiteParser.cpp */,
+				3340425C2063737E002B0274 /* SQLiteParser.h */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
 		4B1559FB206241AB002B4FDA /* antlr4-runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +976,7 @@
 		4B5221C02062345E00672957 /* antlr4oc */ = {
 			isa = PBXGroup;
 			children = (
+				3340425420637320002B0274 /* sqlite */,
 				4B52234E206238E400672957 /* g4 */,
 				4B5221C12062348100672957 /* Antlr4OC.h */,
 				4B5221C22062348100672957 /* Antlr4OC.mm */,
@@ -1253,7 +1293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B15591720623A53002B4FDA /* JavaScriptLexer.g4 in Resources */,
+				334042632063737E002B0274 /* SQLite.tokens in Resources */,
 				4B1558FA20623A53002B4FDA /* apex.g4 in Resources */,
+				334042672063737E002B0274 /* SQLite.interp in Resources */,
 				4B1558BD20623A53002B4FDA /* PCRE.g4 in Resources */,
 				4B15590920623A53002B4FDA /* CSharpPreprocessorParser.g4 in Resources */,
 				4B1558AA20623A52002B4FDA /* vhdl.g4 in Resources */,
@@ -1421,7 +1463,9 @@
 				4B1558A720623A52002B4FDA /* rpn.g4 in Resources */,
 				4B15589220623A52002B4FDA /* Cobol85Preprocessor.g4 in Resources */,
 				4B1558BA20623A52002B4FDA /* LexUnicode.g4 in Resources */,
+				334042662063737E002B0274 /* SQLiteLexer.tokens in Resources */,
 				4B1558CE20623A53002B4FDA /* Solidity.g4 in Resources */,
+				334042612063737E002B0274 /* SQLiteLexer.interp in Resources */,
 				4B15588420623A52002B4FDA /* ObjectiveCParser.g4 in Resources */,
 				4B5220EB206233A400672957 /* Main.storyboard in Resources */,
 				4B15586F20623A52002B4FDA /* JavaLexer.g4 in Resources */,
@@ -1475,8 +1519,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B5221C32062348100672957 /* Antlr4OC.mm in Sources */,
+				334042642063737E002B0274 /* SQLiteListener.cpp in Sources */,
+				334042682063737E002B0274 /* SQLiteLexer.cpp in Sources */,
 				4B5220E8206233A400672957 /* ViewController.m in Sources */,
+				334042652063737E002B0274 /* SQLiteParser.cpp in Sources */,
 				4B5220F3206233A400672957 /* main.m in Sources */,
+				334042622063737E002B0274 /* SQLiteBaseListener.cpp in Sources */,
 				4B5220E5206233A400672957 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
