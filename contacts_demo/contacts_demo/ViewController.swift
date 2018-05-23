@@ -61,42 +61,44 @@ class ViewController: UIViewController {
     }
     
     func func3() -> () {
-        let path = Bundle.main.path(forResource: "txl", ofType: "csv")
+        let path = Bundle.main.path(forResource: "通讯录20180515", ofType: "txl")
         do {
             let string = try String(contentsOfFile: path!)
             let lines = string.components(separatedBy: "\n")
             let request = CNSaveRequest()
-            var lastDepartment = "";
             for line in lines {
-                var labels = line.components(separatedBy: ",");
-                let name = labels[0]
-                let phone = labels[1]
-                let email = labels[2]
-                let department : String = labels[3]
-                let title = labels[4]
-                
-                let lastName = name.substring(to: name.index(name.startIndex, offsetBy: 1))
-                let givenName = name.substring(from: name.index(name.startIndex, offsetBy:1))
+                let items = line.components(separatedBy: ",");
                 
                 let contact = CNMutableContact()
-                contact.givenName = givenName
-                contact.familyName = lastName
-                
-                let phonenumber = CNLabeledValue(label: CNLabelPhoneNumberMobile, value: CNPhoneNumber(stringValue: phone))
-                contact.phoneNumbers = [phonenumber]
-                
-                let workEmail = CNLabeledValue(label: CNLabelWork, value: email as NSString)
-                contact.emailAddresses = [workEmail]
-                
-                contact.organizationName = "北京华媒康讯信息技术有限公司"
-                if department != "" {
-                    contact.departmentName = department;
-                    lastDepartment = department;
-                }else{
-                    contact.departmentName = lastDepartment;
+                for item in items {
+                    print(item)
+                    let labels = item.components(separatedBy: ":");
+                    let key = labels[0];
+                    let value = labels[1];
+                    if key == "姓名" {
+                        let name = value;
+                        let lastName = name.substring(to: name.index(name.startIndex, offsetBy: 1))
+                        let givenName = name.substring(from: name.index(name.startIndex, offsetBy:1))
+                        contact.givenName = givenName
+                        contact.familyName = lastName
+                    } else if key == "部门" {
+                        contact.departmentName = value;
+                    } else if key == "职位" {
+                        contact.jobTitle = value;
+                    } else if key == "mobile" {
+                        let phonenumber = CNLabeledValue(label: CNLabelPhoneNumberMobile, value: CNPhoneNumber(stringValue: value))
+                        contact.phoneNumbers = [phonenumber]
+                    } else if key == "email" {
+                        let workEmail = CNLabeledValue(label: CNLabelWork, value: value as NSString)
+                        contact.emailAddresses = [workEmail]
+                    } else if key == "来源" {
+                        
+                    } else if key == "地区" {
+                        
+                    }
                 }
                 
-                contact.jobTitle = title;
+                contact.organizationName = "北京华媒康讯信息技术有限公司"
                 
                 request.add(contact, toContainerWithIdentifier: nil)
             }
