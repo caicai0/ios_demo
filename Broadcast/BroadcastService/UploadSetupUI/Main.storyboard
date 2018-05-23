@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gEF-bC-vdL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Broadcast Setup View Controller-->
+        <scene sceneID="PLt-zR-tcf">
+            <objects>
+                <viewController storyboardIdentifier="BroadcastSetupViewController" id="gEF-bC-vdL" customClass="BroadcastSetupViewController" customModule="UploadSetupUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nj9-wM-ada">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stc-CE-PNV">
+                                <rect key="frame" x="16" y="116" width="171.5" height="30"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="OK:" destination="gEF-bC-vdL" eventType="touchUpInside" id="FhR-kY-8KB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kka-Qv-Aqn">
+                                <rect key="frame" x="16" y="70" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrp-kC-ulx">
+                                <rect key="frame" x="187.5" y="116" width="171.5" height="30"/>
+                                <state key="normal" title="cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="gEF-bC-vdL" eventType="touchUpInside" id="MTB-Zv-Mtf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O5g-IG-HAb" firstAttribute="trailing" secondItem="kka-Qv-Aqn" secondAttribute="trailing" constant="16" id="8hE-88-jir"/>
+                            <constraint firstItem="Stc-CE-PNV" firstAttribute="top" secondItem="kka-Qv-Aqn" secondAttribute="bottom" constant="16" id="9nb-ib-OrJ"/>
+                            <constraint firstItem="kka-Qv-Aqn" firstAttribute="leading" secondItem="O5g-IG-HAb" secondAttribute="leading" constant="16" id="Bov-3t-5qv"/>
+                            <constraint firstItem="wrp-kC-ulx" firstAttribute="top" secondItem="kka-Qv-Aqn" secondAttribute="bottom" constant="16" id="PKu-4R-U9f"/>
+                            <constraint firstItem="wrp-kC-ulx" firstAttribute="leading" secondItem="Stc-CE-PNV" secondAttribute="trailing" id="TpU-80-651"/>
+                            <constraint firstItem="wrp-kC-ulx" firstAttribute="trailing" secondItem="kka-Qv-Aqn" secondAttribute="trailing" id="WDn-vu-dOY"/>
+                            <constraint firstItem="Stc-CE-PNV" firstAttribute="leading" secondItem="kka-Qv-Aqn" secondAttribute="leading" id="ZX1-uW-fmC"/>
+                            <constraint firstItem="wrp-kC-ulx" firstAttribute="width" secondItem="Stc-CE-PNV" secondAttribute="width" id="a74-0m-d7l"/>
+                            <constraint firstItem="kka-Qv-Aqn" firstAttribute="top" secondItem="O5g-IG-HAb" secondAttribute="top" constant="50" id="vKS-K3-zQG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O5g-IG-HAb"/>
+                    </view>
+                    <connections>
+                        <outlet property="texturl" destination="kka-Qv-Aqn" id="mYR-UI-0A5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dP4-aK-Pyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="121"/>
+        </scene>
+    </scenes>
+</document>
