@@ -18,6 +18,7 @@ class TableViewCell: UITableViewCell {
         }
         set{
             _model = newValue
+            Thread.sleep(forTimeInterval: 0.1)
             viewHeigth.constant = CGFloat(arc4random()%100)
         }
     }
